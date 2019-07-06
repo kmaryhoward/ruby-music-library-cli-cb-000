@@ -69,12 +69,12 @@ class MusicLibraryController
       puts "Which song number would you like to play?"
         input = gets.strip.to_i
           if input < Song.all.length
-              
-              list_songs.select.with_index do |song, index| 
+
+              list_songs.select.with_index do |song, index|
                 if index == input
                   puts "Playing #{song.name} by #{song.artist.name}"
-          
-          
-          
+
+
+
   end
 end
