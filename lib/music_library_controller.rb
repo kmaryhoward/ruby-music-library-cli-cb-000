@@ -27,7 +27,32 @@ class MusicLibraryController
       call
     end
 
+    if input == "list songs"
+      list_songs
+    end
+
+    if input == 'list artists'
+      list_artists
+    end
+
+    if input == 'list genres'
+      list_genres
+    end
+
+    if input == 'list artist'
+      list_songs_by_artist
+    end
+
+    if input == 'list genre'
+      list_songs_by_genre
+    end
+
+    if input == 'play song'
+      play_song
+    end
+
   end
+
 
   def list_songs
     songs = Song.all.sort_by(&:name)
@@ -79,4 +104,6 @@ class MusicLibraryController
       end
 
   end
+
+
 end
