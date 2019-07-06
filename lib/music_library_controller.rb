@@ -72,7 +72,7 @@ class MusicLibraryController
 
               list_songs.select.with_index do |song, index|
                 if index == input
-                  puts "Playing #{song.name} by #{song.artist.name}"
+                  "Playing #{song.name} by #{song.artist.name}"
 
           end
         end
