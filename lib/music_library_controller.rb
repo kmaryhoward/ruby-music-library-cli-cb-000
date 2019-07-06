@@ -71,7 +71,7 @@ class MusicLibraryController
           if input <= Song.all.length
             songs = Song.all.sort_by(&:name)
               songs.select.with_index do |song, index|
-                if index == input
+                if index == input-1
                   puts "Playing #{song.name} by #{song.artist.name}"
 
           end
