@@ -70,9 +70,9 @@ class MusicLibraryController
         input = gets.strip.to_i
           if input < Song.all.length
 
-              list_songs.select.with_index do |song, index|
+              list_songs.each.select.with_index do |song, index|
                 if index == input
-                  "Playing #{song.name} by #{song.artist.name}"
+                  puts "Playing #{song.name} by #{song.artist.name}"
 
           end
         end
